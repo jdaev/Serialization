@@ -1,18 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Shape : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Vector3 scale;
+    private Rigidbody rb;
+    private Material material;
+
+    private void Start()
     {
-        
+        rb = gameObject.GetComponent<Rigidbody>();
+        material = gameObject.GetComponent<MeshRenderer>().material;
     }
 
-    // Update is called once per frame
-    void Update()
+    public ShapeData ToShapeData()
     {
-        
+        return new ShapeData(
+            Vector3Serializable.FromVector(transform.localScale), ColorRGB.FromColor(material.color),
+            Vector3Serializable.FromVector(transform.position), Vector3Serializable.FromVector(rb.velocity),
+            Vector3Serializable.FromVector(rb.angularVelocity),
+            Vector3Serializable.FromVector(transform.rotation.eulerAngles));
     }
 }

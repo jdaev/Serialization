@@ -1136,7 +1136,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1328551318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395718785}
+        m_TargetAssemblyTypeName: MainScript, Assembly-CSharp
+        m_MethodName: LoadFromBinary
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1328551318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1301,7 +1313,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1405150805}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395718785}
+        m_TargetAssemblyTypeName: MainScript, Assembly-CSharp
+        m_MethodName: SaveToXML
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1405150805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,7 +1544,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1519330186}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395718785}
+        m_TargetAssemblyTypeName: MainScript, Assembly-CSharp
+        m_MethodName: LoadFromXML
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1519330186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,7 +1676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1556709507}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1395718785}
+        m_TargetAssemblyTypeName: MainScript, Assembly-CSharp
+        m_MethodName: SaveToBinary
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1556709507
 MonoBehaviour:
   m_ObjectHideFlags: 0
