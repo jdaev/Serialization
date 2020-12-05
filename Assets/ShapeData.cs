@@ -5,12 +5,16 @@ using UnityEngine;
 [XmlRoot("ShapeData")]
 public class ShapeData
 {
-    [XmlAttribute("scale")] public Vector3Serializable Scale;
-    [XmlAttribute("color")] public ColorRGB Color;
-    [XmlAttribute("position")] public Vector3Serializable Position;
-    [XmlAttribute("velocity")] public Vector3Serializable Velocity;
-    [XmlAttribute("angularVelocity")] public Vector3Serializable AngularVelocity;
-    [XmlAttribute("rotation")] public Vector3Serializable Rotation;
+    public Vector3Serializable Scale;
+    public ColorRGB Color;
+    public Vector3Serializable Position;
+    public Vector3Serializable Velocity;
+    public Vector3Serializable AngularVelocity;
+    public Vector3Serializable Rotation;
+
+    public ShapeData()
+    {
+    }
 
     public ShapeData(Vector3Serializable scale, ColorRGB color, Vector3Serializable position,
         Vector3Serializable velocity, Vector3Serializable angularVelocity,
@@ -28,10 +32,12 @@ public class ShapeData
 [System.Serializable]
 public class Vector3Serializable
 {
-    [XmlAttribute("x")] public float x;
-    [XmlAttribute("y")] public float y;
-    [XmlAttribute("z")] public float z;
+    public float x;
+    public float y;
+    public float z;
 
+    
+    public Vector3Serializable(){}
     public Vector3Serializable(float x, float y, float z)
     {
         this.x = x;
@@ -53,11 +59,13 @@ public class Vector3Serializable
 [System.Serializable]
 public class ColorRGB
 {
-    [XmlAttribute("r")] public float r;
-    [XmlAttribute("g")] public float g;
-    [XmlAttribute("b")] public float b;
-    [XmlAttribute("a")] public float a;
-
+    public float r;
+    public float g;
+    public float b;
+    public float a;
+    
+    public ColorRGB(){}
+    
     public ColorRGB(float r, float g, float b, float a)
     {
         this.r = r;

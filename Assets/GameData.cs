@@ -4,9 +4,9 @@
 [XmlRoot("GameData")]
 public class GameData
 {
-    [XmlAttribute("spheres")] public ShapeData[] spheres;
-    [XmlAttribute("cubes")] public ShapeData[] cubes;
-
+    public ShapeData[] spheres;
+    public ShapeData[] cubes;
+    public GameData(){}
     public GameData(ShapeData[] spheres, ShapeData[] cubes)
     {
         this.spheres = spheres;

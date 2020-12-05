@@ -215,7 +215,7 @@ public class MainScript : MonoBehaviour
         GameData gameData = GenerateSaveData();
         FileStream fileStream = File.Create(Application.persistentDataPath + "/save.xml");
         var serializer = new XmlSerializer(typeof(GameData));
-        serializer.Serialize(fileStream, this);
+        serializer.Serialize(fileStream, gameData);
         fileStream.Close();
     }
 
