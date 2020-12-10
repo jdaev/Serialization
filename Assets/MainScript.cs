@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
@@ -202,12 +203,22 @@ public class MainScript : MonoBehaviour
         LoadGameFromGameData(gameData);
     }
 
-    private void SaveToJSON()
+    public void SaveToJSON()
     {
+        GameData gameData = GenerateSaveData();
+        string json = JsonUtility.ToJson(gameData);
+
+        StreamWriter sw = File.CreateText(Application.persistentDataPath +"/save.json"); 
+        sw.Close();
+
+        File.WriteAllText(Application.persistentDataPath +"/save.json", json);
     }
 
-    private void LoadFromJSON()
+    public void LoadFromJSON()
     {
+        string json = File.ReadAllText(Application.persistentDataPath +"/save.json"); 
+
+        LoadGameFromGameData(JsonUtility.FromJson<GameData>(json));
     }
 
     public void SaveToXML()

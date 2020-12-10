@@ -28,9 +28,11 @@
     <list default="true" id="0d4fd7bf-ea15-4d4a-b3cc-736c0d5ef24b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Serialization/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Serialization/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShapeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ShapeData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +99,7 @@
       <workItem from="1607022300906" duration="4099000" />
       <workItem from="1607032140917" duration="8426000" />
       <workItem from="1607105392629" duration="1556000" />
+      <workItem from="1607617154566" duration="762000" />
     </task>
     <task id="LOCAL-00001" summary="saving">
       <created>1607045556895</created>
